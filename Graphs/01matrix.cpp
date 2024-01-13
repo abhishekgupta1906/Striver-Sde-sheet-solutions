@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 // 1 ko rotten orange jaisa treat karo
-// distance of nearest 1 from each cell
+// distance of nearest 1 for each cell
 vector<vector<int>> nearest(vector<vector<int>> &mat, int n, int m)
 {
     vector<vector<int>> ans(n, vector<int>(m, 0));
