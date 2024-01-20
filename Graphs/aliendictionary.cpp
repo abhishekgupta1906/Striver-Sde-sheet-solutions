@@ -6,6 +6,8 @@ using namespace std;
 // problem h alien dictionary diya hua h,uska order find out karo
 // two consecutive strings ko lo aur pehla unmatching jo charaters aye unke for ex-'t'->'f
 // using topo sort kahn algorithm
+// k ka mtlb h first k alphabets of stanadrd dictionary
+// toh alien dictionary me inka order kya hoga
 vector<int> toposort(int n, vector<int>adj[])
 {
     
