@@ -57,13 +57,13 @@ int f(vector<int> &arr, int index, int n, int k, vector<int> &dp)
     int maxi = 0;
     int maxinumber = 0;
 
-    for (int j = index; j < min(n, index + k); j++)
+    for (int j =index; j <=min(index + k,n); j++)
     {
 
-        maxinumber = max(maxinumber, arr[j]);
+        maxinumber = max(maxinumber, arr[j-1]);
         /* code */
 
-        int coins = maxinumber * (j - index + 1) + f(arr, j + 1, n, k, dp);
+        int coins = maxinumber * (j - index) + f(arr, j+1, n, k, dp);
         maxi = max(maxi, coins);
     }
 
